@@ -244,10 +244,10 @@ such that:
 
 \begin{figure}[h]
     \centering
-    { \includegraphics[width=0.6\textwidth]{gsea_stat_with_line.png} }
-    \caption{Graph that corresponds to calculation of GSEA 
+    { \includegraphics[width=0.75\textwidth]{gsea_stat.pdf} }
+    \caption{Graph that corresponds to a calculation of GSEA 
     statistic. Each breakpoint corresponds to gene present in the pathway. 
-    Red arrow points to a point which is the farthest
+    Red dotted line cross at a point which is the farthest
 up from a diagonal (dashed line). This point correspond to gene $i^+$, 
 where the maximal value of $\mathrm{ES}_i$ is reached}%
     \label{fig_gsea_stat}%
@@ -351,16 +351,15 @@ $(\Delta_x,\Delta_y) = (-1, |S_g|)$.
 
 \begin{figure}[h]
 \begin{center}
-\includegraphics[width=0.6\textwidth]{gsea_update.png}
+\includegraphics[width=0.7\textwidth]{gsea_update.pdf}
 \end{center}
 \caption{
-    Update of a GSEA graph when gene $\pi_k \approx 4000$ is 
+    Update of a GSEA graph when gene $\pi_k \approx 1000$ is 
     added. Red graph corresponds
     to the GSEA graph for gene set $\pi[1..k-1]$, 
-    blue graph corresponds to the 
-    graph for $\pi[1..k]$.
-    A part of the graph to left of $r_k$ does not change and 
-    the other part is shifted to up-left corner. The diagonal
+    blue graph corresponds to $\pi[1..k]$.
+    A part of the graph to left of $x=x_{r_k}$ does not change and 
+    the other part is shifted to the top-left corner. The diagonal
     $\left((x_0, y_0), (x_N, y_N)\right)$ is rotated
     counterclockwise.
   }\label{fig_gsea_update}
