@@ -501,21 +501,20 @@ in 79 gene sets with GSEA-adjusted FDR q-value of less than $10^{-2}$. All
 significant gene sets were in a positive mode.
 
 First, to get a similar nominal p-values accuracy we ran FGSEA algorithm on
-1172 permutations in total ($2\cdot586$: 2 more permutations for each 
-additional pathway). This took 3 seconds, but resulted
-in no significant hits due to multiple testing correction. The same
+1000 permutations. This took 2 seconds, but resulted
+in no significant hits due after multiple testing correction (with FRD $\le$ 1\%). The same
 effect required GSEA authors to develop a custom method approximate FDR correction.
 
 Second, to get a similar number of significant hits FGSEA
-was run with 5860 total permutations.
-It took 6 seconds and resulted in 
-76 gene sets with BH-adjusted p-value of less than $10^{-2}$. Is is important
-to note, that, unlike for GSEA, 3 of these 76 gene sets were in a negative mode.
+was run with 10000 permutations.
+It took 9 seconds and resulted in 
+78 gene sets with BH-adjusted p-value of less than $10^{-2}$. Is is important
+to note, that, unlike for GSEA, 3 of these 78 gene sets were in a negative mode.
 
-Last, we ran FGSEA with a similar total running time. Withing 100 seconds
-FGSEA was able to do 117200 permutations. This resulted in
-78 gene sets with BH-adjusted p-value of less than $10^{-2}$ (3 sets
-were in negative mode). The minimal nominal p-value was $1.05\cdot10^{-5}$. 
+Last, we ran FGSEA with a similar total running time. Withing 90 seconds
+FGSEA was able to do 100000 permutations. This resulted in
+77 gene sets with BH-adjusted p-value of less than $10^{-2}$ (3 sets
+were in the negative mode). The minimal nominal p-value was $1.23\cdot10^{-5}$. 
 
 \section{Conclusion}
 
